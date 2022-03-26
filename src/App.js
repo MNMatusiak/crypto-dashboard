@@ -1,8 +1,14 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
+import Nav from "./Nav";
 import CryptoList from "./CryptoList";
+import ExchangeRates from "./ExchangeRates";
+import CryptoNews from "./CryptoNews";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
 
 function App() {
+
     const [coins, setCoins] = useState([]);
 
     useEffect(() => {
@@ -18,16 +24,26 @@ function App() {
     }, []);
 
     return (
-        <div className='crypto-app'>
+        <>
+            <Router>
+                <Nav/>
+                <Route path="/cryptoList" component={CryptoList}/>
+                <Route path="/exchangerates" component={ExchangeRates}/>
+                <Route path="/cryptonews" component={CryptoNews}/>
 
-            {coins.map(coin => {
-                return (
-                    <CryptoList key={coin.id} name={coin.name} price={coin.current_price} image={coin.image}
-                                symbol={coin.symbol}/>
-                );
-            })}
+                <div className='crypto-app'>
 
-        </div>
+                    {coins.map(coin => {
+                        return (
+                            <CryptoList key={coin.id} name={coin.name} price={coin.current_price} image={coin.image}
+                                        symbol={coin.symbol}/>
+                        );
+                    })}
+                </div>
+
+            </Router>
+        </>
+
     );
 }
 
