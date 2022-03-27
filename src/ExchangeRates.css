@@ -1,0 +1,7 @@
+.page-main{
+    background-image: url("/images/cool-background1.png");
+    background-position: center;
+    background-size:cover;
+    min-height: 100vh;
+
+}
