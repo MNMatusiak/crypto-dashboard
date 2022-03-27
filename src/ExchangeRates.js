@@ -3,7 +3,7 @@ import './CryptoList.css';
 
 const ExchangeRates = () => {
     return (
-        <div>ExchangeRates</div>
+        <div>ExchangeRates </div>
     )
 }
 
