@@ -1,7 +1,36 @@
-.page-main{
-    background-image: url("/images/cool-background1.png");
-    background-position: center;
+.body{
+    background-image: url("/images/cool-background3.jpg");
+    background-repeat: no-repeat;
     background-size:cover;
     min-height: 100vh;
+}
 
+.main-exchange-rate{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.container-exchange-rate{
+    max-width: 1100px;
+    width:100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95vh;
+}
+
+
+.box1{
+    width: 100%;
+    /*background-color: lightgray;*/
+    padding: 10px;
+
+}
+
+.box2{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
 }

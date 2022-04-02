@@ -15,9 +15,9 @@ const Nav = () => {
                 <Link className="nav-links" to="/exchangerates">
                     <li>Exchange Rates</li>
                 </Link>
-                <Link className="nav-links" to="/cryptonews">
-                    <li>Crypto News</li>
-                </Link>
+                {/*<Link className="nav-links" to="/cryptonews">*/}
+                {/*    <li>Crypto News</li>*/}
+                {/*</Link>*/}
 
             </ul>
         </nav>

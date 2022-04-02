@@ -20,7 +20,7 @@ const CryptoNews = () => {
 
     return (
             <div className='page-main'>
-               CryptoNews
+
             </div>
     )
 }
